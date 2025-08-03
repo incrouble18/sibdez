@@ -1574,7 +1574,7 @@
                     <h3 class="hero-form-title">Получить консультацию</h3>
                     <p class="hero-form-subtitle">Заполните форму и получите бесплатную консультацию специалиста</p>
                 </div>
-                <form action="#" method="post" id="hero-form">
+                <form action="https://formspree.io/f/mdkdljao" method="post" id="hero-form">
                     <div class="form-group">
                             <input type="text" name="name" class="form-control" placeholder="👤 Ваше имя">
                         </div>
@@ -2479,7 +2479,7 @@
                 <div style="background: white; border-radius: 20px; padding: 40px; box-shadow: var(--shadow-md); border: 3px solid var(--primary);" data-aos="fade-left">
                     <h3 style="font-size: 28px; font-weight: 700; margin-bottom: 15px; color: var(--text);">💬 Написать нам</h3>
                     <p style="font-size: 16px; color: var(--text-light); margin-bottom: 30px;">Заполните форму и получите бесплатную консультацию специалиста</p>
-                    <form action="/api/submit-form" method="post" id="contact-form">
+                    <form action="https://formspree.io/f/mdkdljao" method="post" id="contact-form">
                         <div class="form-group">
                             <input type="text" name="name" class="form-control" placeholder="👤 Ваше имя">
                         </div>
@@ -3669,9 +3669,7 @@
         });
 
         // Обработка форм
-        document.getElementById('hero-form').addEventListener('submit', async function(e) {
-            e.preventDefault();
-            
+        document.getElementById('hero-form').addEventListener('submit', function(e) {
             const submitBtn = this.querySelector('.form-submit');
             const originalText = submitBtn.innerHTML;
             
@@ -3679,51 +3677,8 @@
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin btn-icon"></i>ОТПРАВЛЯЕМ...';
             submitBtn.disabled = true;
             
-            try {
-                const formData = new FormData(this);
-                const response = await fetch('telegram_handler.php', {
-                    method: 'POST',
-                    body: formData
-                });
-                
-                const result = await response.json();
-                
-                if (result.success) {
-                    // Успешная отправка
-                    submitBtn.innerHTML = '<i class="fas fa-check btn-icon"></i>ОТПРАВЛЕНО!';
-                    submitBtn.style.background = 'var(--gradient-success)';
-                    
-                    // Показываем модальное окно
-                    showSuccessModal();
-                    
-                    // Очищаем форму
-                    this.reset();
-                    
-                    // Возвращаем кнопку в исходное состояние через 3 секунды
-                    setTimeout(() => {
-                        submitBtn.innerHTML = originalText;
-                        submitBtn.style.background = 'var(--gradient-danger)';
-                        submitBtn.disabled = false;
-                    }, 3000);
-                } else {
-                    throw new Error(result.message || 'Ошибка отправки');
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                
-                // Показываем ошибку
-                submitBtn.innerHTML = '<i class="fas fa-exclamation-triangle btn-icon"></i>ОШИБКА';
-                submitBtn.style.background = 'var(--gradient-danger)';
-                
-                alert('❌ Произошла ошибка при отправке заявки. Попробуйте еще раз или позвоните нам.');
-                
-                // Возвращаем кнопку в исходное состояние через 3 секунды
-                setTimeout(() => {
-                    submitBtn.innerHTML = originalText;
-                    submitBtn.style.background = 'var(--gradient-danger)';
-                    submitBtn.disabled = false;
-                }, 3000);
-            }
+            // Formspree обработает форму автоматически
+            // После отправки пользователь будет перенаправлен на страницу благодарности Formspree
         });
 
         // Функция для переключения FAQ
@@ -3871,9 +3826,7 @@
             // Обработка отправки формы
             const contactForm = document.getElementById('contact-form');
             if (contactForm) {
-                contactForm.addEventListener('submit', async function(e) {
-                    e.preventDefault();
-                    
+                contactForm.addEventListener('submit', function(e) {
                     const submitBtn = contactForm.querySelector('.form-submit');
                     const originalText = submitBtn.innerHTML;
                     
@@ -3881,46 +3834,8 @@
                     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin btn-icon"></i>ОТПРАВЛЯЕМ...';
                     submitBtn.disabled = true;
                     
-                    try {
-                        const formData = new FormData(contactForm);
-                        const response = await fetch('telegram_handler.php', {
-                            method: 'POST',
-                            body: formData
-                        });
-                        
-                        const result = await response.json();
-                        
-                        if (result.success) {
-                            // Успешная отправка
-                            submitBtn.innerHTML = '<i class="fas fa-check btn-icon"></i>ОТПРАВЛЕНО!';
-                            submitBtn.style.background = 'var(--gradient-success)';
-                            
-                            // Показываем модальное окно
-                            showSuccessModal();
-                            
-                            // Очищаем форму
-                            contactForm.reset();
-                            
-                            // Возвращаем кнопку в исходное состояние через 3 секунды
-                            setTimeout(() => {
-                                submitBtn.innerHTML = originalText;
-                                submitBtn.style.background = 'var(--gradient-danger)';
-                                submitBtn.disabled = false;
-                            }, 3000);
-                        } else {
-                            // Ошибка
-                            throw new Error(result.message);
-                        }
-                    } catch (error) {
-                        console.error('Form submission error:', error);
-                        
-                        // Показываем ошибку
-                        alert('❌ ' + (error.message || 'Произошла ошибка. Попробуйте позвонить нам напрямую: +7 913 614 7446'));
-                        
-                        // Возвращаем кнопку в исходное состояние
-                        submitBtn.innerHTML = originalText;
-                        submitBtn.disabled = false;
-                    }
+                    // Formspree обработает форму автоматически
+                    // После отправки пользователь будет перенаправлен на страницу благодарности Formspree
                 });
             }
         });
