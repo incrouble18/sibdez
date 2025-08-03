@@ -3668,19 +3668,6 @@
             window.open('https://wa.me/79136147446', '_blank');
         });
 
-        // Обработка форм
-        document.getElementById('hero-form').addEventListener('submit', function(e) {
-            const submitBtn = this.querySelector('.form-submit');
-            const originalText = submitBtn.innerHTML;
-            
-            // Показываем состояние загрузки
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin btn-icon"></i>ОТПРАВЛЯЕМ...';
-            submitBtn.disabled = true;
-            
-            // Formspree обработает форму автоматически
-            // После отправки пользователь будет перенаправлен на страницу благодарности Formspree
-        });
-
         // Функция для переключения FAQ
         function toggleFAQ(element) {
             const faqItem = element.closest('.faq-item');
@@ -3822,22 +3809,6 @@
         // Инициализация после загрузки DOM
         document.addEventListener('DOMContentLoaded', function() {
             initReviewsSlider();
-            
-            // Обработка отправки формы
-            const contactForm = document.getElementById('contact-form');
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    const submitBtn = contactForm.querySelector('.form-submit');
-                    const originalText = submitBtn.innerHTML;
-                    
-                    // Показываем состояние загрузки
-                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin btn-icon"></i>ОТПРАВЛЯЕМ...';
-                    submitBtn.disabled = true;
-                    
-                    // Formspree обработает форму автоматически
-                    // После отправки пользователь будет перенаправлен на страницу благодарности Formspree
-                });
-            }
         });
 
         // Функции для модального окна
