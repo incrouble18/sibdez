@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Основные страницы
+Allow: /index.html
+
+# Запрет на индексацию служебных файлов
+Disallow: /.git/
+Disallow: /README.md
+
+# Карта сайта
+Sitemap: https://incrouble18.github.io/sibdez/sitemap.xml
+
+# Дополнительные директивы для основных поисковых систем
+User-agent: Yandex
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Время задержки между запросами (в секундах)
+Crawl-delay: 1
+
