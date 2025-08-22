@@ -10,7 +10,7 @@ Disallow: /.git/
 Disallow: /README.md
 
 # Карта сайта
-Sitemap: https://incrouble18.github.io/sibdez/sitemap.xml
+Sitemap: https://sibdezomsk.ru/sitemap.xml
 
 # Дополнительные директивы для основных поисковых систем
 User-agent: Yandex
