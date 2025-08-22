@@ -3,6 +3,7 @@ Allow: /
 
 # Основные страницы
 Allow: /index.html
+Allow: /klopy.html
 
 # Запрет на индексацию служебных файлов
 Disallow: /.git/
