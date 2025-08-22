@@ -6,7 +6,7 @@
 
     <!-- Главная страница -->
     <url>
-        <loc>https://sibdezomsk.ru/</loc>
+        <loc>https://incrouble18.github.io/sibdez/</loc>
         <lastmod>2025-08-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -14,7 +14,7 @@
 
     <!-- Основная страница (index.html) -->
     <url>
-        <loc>https://sibdezomsk.ru/index.html</loc>
+        <loc>https://incrouble18.github.io/sibdez/index.html</loc>
         <lastmod>2025-08-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -22,7 +22,7 @@
 
     <!-- Страница услуги: Уничтожение клопов -->
     <url>
-        <loc>https://sibdezomsk.ru/klopy.html</loc>
+        <loc>https://incrouble18.github.io/sibdez/klopy.html</loc>
         <lastmod>2025-08-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>

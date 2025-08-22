@@ -5,19 +5,29 @@ Allow: /
 Allow: /index.html
 Allow: /klopy.html
 
+# Изображения
+Allow: /images/
+
 # Запрет на индексацию служебных файлов
 Disallow: /.git/
 Disallow: /README.md
+Disallow: /.github/
 
 # Карта сайта
-Sitemap: https://sibdezomsk.ru/sitemap.xml
+Sitemap: https://incrouble18.github.io/sibdez/sitemap.xml
 
 # Дополнительные директивы для основных поисковых систем
 User-agent: Yandex
 Allow: /
+Crawl-delay: 1
 
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
 
 # Время задержки между запросами (в секундах)
 Crawl-delay: 1
