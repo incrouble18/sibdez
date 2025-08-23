@@ -4,6 +4,7 @@ Allow: /
 # Основные страницы
 Allow: /index.html
 Allow: /klopy.html
+Allow: /tarakany.html
 
 # Изображения
 Allow: /images/
