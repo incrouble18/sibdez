@@ -1,35 +1,9 @@
 User-agent: *
 Allow: /
 
-# Основные страницы
-Allow: /index.html
-Allow: /klopy.html
-Allow: /tarakany.html
+# Host directive is for Yandex only
+Host: https://sibdezomsk.ru
 
-# Изображения
-Allow: /images/
+Sitemap: https://sibdezomsk.ru/sitemap.xml
 
-# Запрет на индексацию служебных файлов
-Disallow: /.git/
-Disallow: /README.md
-Disallow: /.github/
-
-# Карта сайта
-Sitemap: https://incrouble18.github.io/sibdez/sitemap.xml
-
-# Дополнительные директивы для основных поисковых систем
-User-agent: Yandex
-Allow: /
-Crawl-delay: 1
-
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
-
-# Время задержки между запросами (в секундах)
-Crawl-delay: 1
 
