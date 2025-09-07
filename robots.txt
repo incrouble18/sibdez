@@ -17,7 +17,7 @@ Disallow: /temp/
 Disallow: /backup/
 
 # Указываем расположение sitemap
-Sitemap: https://incrouble18.github.io/sibdez/sitemap.xml
+Sitemap: https://sibdezomsk.ru/sitemap.xml
 
 # Настройки для Яндекса
 User-agent: Yandex
