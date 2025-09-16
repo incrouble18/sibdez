@@ -16,14 +16,14 @@
     <meta name="author" content="СибДез Омск">
     <meta name="theme-color" content="#FF3333">
     <meta name="yandex-verification" content="sibdez-omsk-verification-code-2024">
-    <link rel="canonical" href="https://incrouble18.github.io/sibdez/blohi.html">
+    <link rel="canonical" href="https://sibdezomsk.ru/blohi.html">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Уничтожение блох в Омске - СибДез | Гарантия 2 года">
     <meta property="og:description" content="Профессиональное уничтожение блох холодным и горячим туманом от 1150Р. Гарантия 2 года или возврат денег!">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://incrouble18.github.io/sibdez/blohi.html">
-    <meta property="og:image" content="https://incrouble18.github.io/sibdez/images/new-blohi-header-bg.jpg">
+    <meta property="og:url" content="https://sibdezomsk.ru/blohi.html">
+    <meta property="og:image" content="https://sibdezomsk.ru/images/blohi-hero.jpg">
     <meta property="og:site_name" content="СибДез Омск">
     <meta property="og:locale" content="ru_RU">
 
@@ -31,7 +31,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Уничтожение блох в Омске - СибДез">
     <meta name="twitter:description" content="Профессиональное уничтожение блох от 1150Р. Гарантия 2 года! Избавляемся от всех видов блох навсегда!">
-    <meta name="twitter:image" content="https://incrouble18.github.io/sibdez/images/new-blohi-header-bg.jpg">
+    <meta name="twitter:image" content="https://sibdezomsk.ru/images/blohi-hero.jpg">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -60,7 +60,7 @@
       "provider": {
         "@type": "Organization",
         "name": "СибДез Омск",
-        "url": "https://incrouble18.github.io/sibdez/"
+        "url": "https://sibdezomsk.ru/"
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -107,7 +107,840 @@
     }
     </script>
 
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header-main {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0;
+        }
+
+        .logo img {
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover img {
+            transform: scale(1.05);
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .main-nav a:hover {
+            color: #ff3333;
+        }
+
+        .main-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #ff3333;
+            transition: width 0.3s ease;
+        }
+
+        .main-nav a:hover::after {
+            width: 100%;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .phone-number {
+            color: #ff3333;
+            font-weight: 700;
+            font-size: 18px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .phone-number:hover {
+            transform: scale(1.05);
+        }
+
+        .callback-btn {
+            background: linear-gradient(135deg, #ff3333, #ff6666);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 51, 51, 0.3);
+        }
+
+        .callback-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 51, 51, 0.4);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, rgba(255, 51, 51, 0.9), rgba(255, 102, 102, 0.8)), url('images/blohi-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255, 51, 51, 0.1), rgba(255, 102, 102, 0.1));
+            animation: gradientShift 8s ease-in-out infinite;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background: linear-gradient(45deg, rgba(255, 51, 51, 0.1), rgba(255, 102, 102, 0.1)); }
+            50% { background: linear-gradient(45deg, rgba(255, 102, 102, 0.1), rgba(255, 51, 51, 0.1)); }
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            z-index: 2;
+            position: relative;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .hero-features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+        }
+
+        .hero-feature i {
+            font-size: 1.2rem;
+            color: #ffff99;
+        }
+
+        .hero-cta {
+            animation: fadeInUp 1s ease-out 0.9s both;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #ffff99, #ffcc00);
+            color: #333;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(255, 255, 153, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 255, 153, 0.6);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Floating particles */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .particle:nth-child(1) { width: 10px; height: 10px; left: 10%; animation-delay: 0s; }
+        .particle:nth-child(2) { width: 15px; height: 15px; left: 20%; animation-delay: 1s; }
+        .particle:nth-child(3) { width: 8px; height: 8px; left: 30%; animation-delay: 2s; }
+        .particle:nth-child(4) { width: 12px; height: 12px; left: 40%; animation-delay: 3s; }
+        .particle:nth-child(5) { width: 18px; height: 18px; left: 50%; animation-delay: 4s; }
+        .particle:nth-child(6) { width: 6px; height: 6px; left: 60%; animation-delay: 5s; }
+        .particle:nth-child(7) { width: 14px; height: 14px; left: 70%; animation-delay: 0.5s; }
+        .particle:nth-child(8) { width: 9px; height: 9px; left: 80%; animation-delay: 1.5s; }
+        .particle:nth-child(9) { width: 16px; height: 16px; left: 90%; animation-delay: 2.5s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        }
+
+        /* Quick Action Section */
+        .quick-action {
+            background: linear-gradient(135deg, #ff6600, #ff9933);
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quick-action::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: movePattern 20s linear infinite;
+        }
+
+        @keyframes movePattern {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .quick-action-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .quick-action h2 {
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .quick-action p {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .quick-action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .action-btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .action-btn.primary {
+            background: white;
+            color: #ff6600;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .action-btn.secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Services Section */
+        .services-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #333;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(135deg, #ff3333, #ff6666);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .service-card:hover::before {
+            left: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ff3333, #ff6666);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .service-features {
+            list-style: none;
+            text-align: left;
+        }
+
+        .service-features li {
+            padding: 8px 0;
+            color: #555;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .service-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        /* Why Choose Us Section */
+        .why-choose {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #ff3333, #ff6666);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why-choose::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="10" cy="60" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="40" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .why-choose-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .advantage-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .advantage-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .advantage-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffff99;
+        }
+
+        .advantage-item h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .advantage-item p {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        /* Pest Types Section */
+        .pest-types {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .pest-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .pest-card {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            border: 1px solid #dee2e6;
+        }
+
+        .pest-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, #fff, #f8f9fa);
+        }
+
+        .pest-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pest-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255, 51, 51, 0.1), transparent);
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+
+        .pest-card:hover .pest-image::after {
+            opacity: 1;
+        }
+
+        .pest-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .pest-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .pest-details {
+            background: rgba(255, 51, 51, 0.05);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ff3333;
+        }
+
+        .pest-details strong {
+            color: #ff3333;
+        }
+
+        /* Process Section */
+        .process-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f1f3f4, #e8eaed);
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #ff3333, #ff6666);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 0 auto 20px;
+            box-shadow: 0 10px 20px rgba(255, 51, 51, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .process-step:hover .step-number {
+            transform: scale(1.1);
+            box-shadow: 0 15px 30px rgba(255, 51, 51, 0.4);
+        }
+
+        .process-step h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .process-step p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Contact Form Section */
+        .contact-form-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #ff6600, #ff9933);
+            color: white;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            background: white;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #ffff99, #ffcc00);
+            color: #333;
+            padding: 18px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255, 255, 153, 0.4);
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #ff3333;
+        }
+
+        .footer-section p,
+        .footer-section li {
+            color: #ccc;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #ff3333;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #555;
+            padding-top: 30px;
+            text-align: center;
+            color: #999;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .main-nav ul {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-features {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .quick-action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid,
+            .advantages-grid,
+            .pest-grid,
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Scroll animations */
+        [data-aos] {
+            pointer-events: none;
+        }
+
+        [data-aos].aos-animate {
+            pointer-events: auto;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -120,260 +953,521 @@
                 <nav class="main-nav">
                     <ul>
                         <li><a href="index.html">Главная</a></li>
+                        <li><a href="klopy.html">Клопы</a></li>
+                        <li><a href="tarakany.html">Тараканы</a></li>
                         <li><a href="#services">Услуги</a></li>
-                        <li><a href="#about">О нас</a></li>
                         <li><a href="#contacts">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="contact-info">
                     <a href="tel:+79136147446" class="phone-number">+7 913 614 7446</a>
-                    <button class="callback-btn">Заказать звонок</button>
+                    <button class="callback-btn" onclick="scrollToForm()">Заказать звонок</button>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <section class="hero-inner" style="background-image: url('images/new-blohi-header-bg.jpg');">
-            <div class="container">
-                <h1>Уничтожение Блох в Омске</h1>
-                <p>Профессиональная дезинсекция от СибДез. Гарантия 2 года.</p>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Уничтожение блох в Омске</h1>
+                <p class="hero-subtitle">Профессиональная дезинсекция от СибДез с гарантией 2 года</p>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-bolt"></i>
+                        <span>Выезд в день обращения</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Гарантия 2 года</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-ruble-sign"></i>
+                        <span>От 1150₽</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <button class="cta-button" onclick="scrollToForm()">
+                        <i class="fas fa-phone"></i>
+                        Вызвать специалиста
+                    </button>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="text-block">
-            <div class="container">
-                <h2>Профессиональное уничтожение блох в Омске</h2>
-                <p>Блохи – это не просто неприятные насекомые, доставляющие дискомфорт, но и опасные переносчики инфекций. Их появление в доме или квартире требует немедленного профессионального вмешательства. Компания СибДез предлагает эффективные услуги по уничтожению блох в Омске и Омской области с гарантией результата на 2 года.</p>
-                <p>Наши специалисты используют современные, безопасные для людей и домашних животных препараты, которые эффективно уничтожают блох на всех стадиях развития – от яиц до взрослых особей. Мы гарантируем полное избавление от блох в кратчайшие сроки.</p>
+    <!-- Quick Action Section -->
+    <section class="quick-action">
+        <div class="container">
+            <div class="quick-action-content">
+                <h2>🔥 Срочное уничтожение блох в Омске!</h2>
+                <p>Выезд специалиста в течение часа. Работаем круглосуточно без выходных и праздников.</p>
+                <div class="quick-action-buttons">
+                    <a href="tel:+79136147446" class="action-btn primary">
+                        <i class="fas fa-phone"></i>
+                        +7 913 614 7446
+                    </a>
+                    <button class="action-btn secondary" onclick="scrollToForm()">
+                        <i class="fas fa-calculator"></i>
+                        Узнать цены
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <h3>Почему выбирают СибДез для уничтожения блох?</h3>
-                <ul>
-                    <li><strong>Гарантия 2 года</strong> — самая длительная гарантия в Омске на дезинсекцию от блох.</li>
-                    <li><strong>Выезд в день обращения</strong> — оперативное решение проблемы, выезд специалиста в течение 1-2 часов.</li>
-                    <li><strong>Безопасные препараты</strong> — используем только сертифицированные инсектициды 4 класса опасности, безопасные для детей и домашних животных.</li>
-                    <li><strong>Опытные специалисты</strong> — более 15 лет успешного опыта в борьбе с блохами и другими вредителями.</li>
-                    <li><strong>Доступные цены</strong> — стоимость обработки от блох в Омске от 1150₽.</li>
-                    <li><strong>Возврат денег</strong> — 100% гарантия результата или полный возврат средств.</li>
-                </ul>
-
-                <h2>Виды блох, которых мы уничтожаем в Омске</h2>
-                <p>В Омске и Омской области встречаются различные виды блох, каждый из которых имеет свои особенности. Наши специалисты обладают глубокими знаниями и опытом для эффективной борьбы с любым видом блох.</p>
-
-                <h4>Кошачья блоха (Ctenocephalides felis)</h4>
-                <p>Самый распространенный вид блох, паразитирующий на кошках, собаках и других теплокровных животных. Часто встречается в квартирах и домах, даже если нет домашних животных, так как может питаться кровью человека.</p>
-
-                <h4>Собачья блоха (Ctenocephalides canis)</h4>
-                <p>Похожа на кошачью блоху, но чаще встречается на собаках. Также может кусать человека, вызывая зуд и раздражение.</p>
-
-                <h4>Человеческая блоха (Pulex irritans)</h4>
-                <p>Встречается реже, но является наиболее опасной, так как предпочитает кровь человека. Может быть переносчиком серьезных заболеваний.</p>
-
-                <h4>Крысиная блоха (Xenopsylla cheopis)</h4>
-                <p>Основной переносчик чумы. Встречается в местах обитания крыс и мышей, может переходить на человека.</p>
-
-                <h4>Земляные блохи (блохи-пескокопы)</h4>
-                <p>Обитают в почве, траве, подвалах. Могут запрыгивать на человека или животных при контакте с зараженной территорией. Часто путают с обычными блохами, но это разные виды.</p>
-
-                <h3>Особенности разных видов блох</h3>
-                <p>Блохи – это мелкие кровососущие насекомые, которые могут доставлять массу проблем. Понимание их особенностей помогает в выборе наиболее эффективных методов борьбы.</p>
-
-                <h4>Кошачья блоха (Ctenocephalides felis)</h4>
-                <ul>
-                    <li><strong>Размер:</strong> 1-3 мм.</li>
-                    <li><strong>Цвет:</strong> Темно-коричневый.</li>
-                    <li><strong>Особенности:</strong> Имеет гребни на голове и груди. Отличается высокой прыгучестью. Жизненный цикл от 2 недель до нескольких месяцев. Яйца откладывает не на животном, а в окружающей среде (ковры, щели, подстилки).</li>
-                    <li><strong>Опасность:</strong> Вызывает аллергические реакции, дерматиты, может переносить яйца гельминтов (глистов) и возбудителей других заболеваний.</li>
-                </ul>
-
-                <h4>Собачья блоха (Ctenocephalides canis)</h4>
-                <ul>
-                    <li><strong>Размер:</strong> 1-4 мм.</li>
-                    <li><strong>Цвет:</strong> Красновато-коричневый.</li>
-                    <li><strong>Особенности:</strong> Морфологически очень похожа на кошачью блоху, но имеет более округлую голову. Также откладывает яйца в окружающей среде. Активна круглый год.</li>
-                    <li><strong>Опасность:</strong> Аналогична кошачьей блохе – переносчик заболеваний, вызывает зуд и раздражение.</li>
-                </ul>
-
-                <h4>Человеческая блоха (Pulex irritans)</h4>
-                <ul>
-                    <li><strong>Размер:</strong> 2-4 мм.</li>
-                    <li><strong>Цвет:</strong> Темно-коричневый, почти черный.</li>
-                    <li><strong>Особенности:</strong> Отсутствуют гребни на голове. Предпочитает человека, но может паразитировать и на других животных. Живет до 1,5 лет.</li>
-                    <li><strong>Опасность:</strong> Является переносчиком возбудителей чумы, тифа, бруцеллеза, сальмонеллеза и других опасных инфекций.</li>
-                </ul>
-
-                <h4>Крысиная блоха (Xenopsylla cheopis)</h4>
-                <ul>
-                    <li><strong>Размер:</strong> 2-3 мм.</li>
-                    <li><strong>Цвет:</strong> Светло-коричневый.</li>
-                    <li><strong>Особенности:</strong> Основной переносчик чумной палочки. Обитает на крысах, но при их гибели активно ищет нового хозяина, включая человека. Обладает высокой устойчивостью к инсектицидам.</li>
-                    <li><strong>Опасность:</strong> Главный переносчик чумы, а также возбудителей эндемического сыпного тифа.</li>
-                </ul>
-
-                <h4>Земляные блохи (блохи-пескокопы)</h4>
-                <ul>
-                    <li><strong>Размер:</strong> 1-2 мм.</li>
-                    <li><strong>Цвет:</strong> Черный.</li>
-                    <li><strong>Особенности:</strong> Обитают в почве, подвалах, на улице. Отличаются очень сильными прыжками. Часто заносятся в дом на обуви или шерсти животных. Могут вызывать сильные укусы, особенно на ногах.</li>
-                    <li><strong>Опасность:</strong> Вызывают сильный зуд, аллергические реакции, могут переносить возбудителей столбняка и других инфекций.</li>
-                </ul>
-
-                <h3>Важно знать!</h3>
-                <p>Самостоятельная борьба с блохами часто не приносит желаемого результата, так как необходимо уничтожить не только взрослых особей, но и их яйца, личинки и куколки, которые могут находиться в труднодоступных местах. Профессиональная дезинсекция гарантирует полное уничтожение всех стадий развития блох.</p>
-
-                <h2>Чем опасны блохи для здоровья человека и животных</h2>
-                <p>Блохи представляют серьезную угрозу для здоровья, как человека, так и домашних животных. Их укусы не только вызывают сильный зуд и дискомфорт, но и могут привести к развитию различных заболеваний и аллергических реакций.</p>
-
-                <h3>🦠 Переносчики опасных заболеваний</h3>
-                <p>Блохи являются переносчиками множества патогенных микроорганизмов, вирусов и бактерий. Среди наиболее опасных заболеваний, которые могут передаваться через укусы блох, выделяют:</p>
-                <ul>
-                    <li><strong>Чума</strong> — особенно крысиная блоха является основным переносчиком чумной палочки.</li>
-                    <li><strong>Эндемический сыпной тиф</strong> — вызывается риккетсиями, передается через укусы блох.</li>
-                    <li><strong>Туляремия</strong> — бактериальная инфекция, поражающая лимфатические узлы, кожу, легкие.</li>
-                    <li><strong>Бруцеллез</strong> — хроническое инфекционное заболевание, поражающее различные органы и системы.</li>
-                    <li><strong>Сальмонеллез</strong> — острая кишечная инфекция.</li>
-                    <li><strong>Гепатит</strong> — некоторые виды блох могут переносить возбудителей гепатита.</li>
-                    <li><strong>Глисты (гельминтозы)</strong> — блохи являются промежуточными хозяевами для некоторых видов ленточных червей (например, огуречного цепня), которые могут передаваться животным и человеку.</li>
-                </ul>
-
-                <h3>🤧 Аллергические реакции и дерматиты</h3>
-                <p>Укусы блох вызывают сильный зуд, покраснение и отек кожи. У людей и животных с повышенной чувствительностью могут развиваться:</p>
-                <ul>
-                    <li><strong>Аллергический дерматит</strong> — воспаление кожи, сопровождающееся сильным зудом, высыпаниями и расчесами.</li>
-                    <li><strong>Блошиный дерматит</strong> — специфическая реакция на слюну блох, проявляющаяся в виде папул, везикул и корочек.</li>
-                    <li><strong>Анафилактический шок</strong> — в редких случаях у особо чувствительных людей может возникнуть тяжелая аллергическая реакция.</li>
-                </ul>
-
-                <h3>🩸 Анемия</h3>
-                <p>При сильном заражении, особенно у молодых животных или животных с ослабленным иммунитетом, постоянные укусы блох могут привести к значительной потере крови и развитию анемии.</p>
-
-                <h3>⚠️ Важно знать!</h3>
-                <p>Не игнорируйте появление блох! Чем раньше вы обратитесь за профессиональной помощью, тем быстрее и безопаснее будет решена проблема, и тем меньше риск для здоровья вашей семьи и питомцев.</p>
-
-                <h2>Наши методы уничтожения блох</h2>
-                <p>Мы используем комплексный подход к дезинсекции от блох, сочетая различные методы и современные препараты для достижения максимальной эффективности и долгосрочного результата.</p>
-
-                <h3>💨 Обработка холодным туманом</h3>
-                <p>Метод, при котором инсектицидный раствор распыляется в виде мелкодисперсного аэрозоля комнатной температуры. Частицы тумана проникают во все щели, трещины, под плинтусы, в ковры и мягкую мебель – места, где блохи и их личинки наиболее часто обитают.</p>
-                <ul>
-                    <li><strong>Преимущества:</strong> Высокая проникающая способность, равномерное распределение препарата, отсутствие мокрых следов, безопасность для поверхностей.</li>
-                    <li><strong>Применение:</strong> Идеально для обработки жилых помещений, квартир, домов, офисов, где важна аккуратность и отсутствие остаточных следов.</li>
-                </ul>
-
-                <h3>🔥 Обработка горячим туманом</h3>
-                <p>Инсектицидный раствор нагревается и распыляется в виде горячего пара. Горячий туман обладает еще большей проникающей способностью, создавая плотное облако, которое достигает самых труднодоступных мест. Высокая температура усиливает действие инсектицида, обеспечивая быстрое и эффективное уничтожение блох, включая яйца и личинки.</p>
-                <ul>
-                    <li><strong>Преимущества:</strong> Максимальная эффективность, быстрое действие, уничтожение всех стадий развития блох, глубокое проникновение.</li>
-                    <li><strong>Применение:</strong> Рекомендуется для сильно зараженных объектов, подвалов, чердаков, промышленных помещений, а также для обработки больших площадей.</li>
-                </ul>
-
-                <h3>🎯 Комплексная обработка</h3>
-                <p>Сочетание нескольких методов для достижения наилучшего результата. Например, использование горячего тумана для основного уничтожения и холодного тумана или профессионального опрыскивателя для точечной обработки и создания барьерной защиты.</p>
-                <ul>
-                    <li><strong>Преимущества:</strong> Гарантированное уничтожение блох, долгосрочная защита, индивидуальный подход к каждому объекту.</li>
-                    <li><strong>Применение:</strong> Для объектов с высокой степенью заражения, а также для профилактики повторного появления блох.</li>
-                </ul>
-
-                <h3>🧪 Барьерная защита</h3>
-                <p>Создание невидимого защитного барьера по периметру помещения и в местах возможного проникновения блох. Используются микрокапсулированные препараты длительного действия, которые предотвращают повторное появление насекомых извне.</p>
-                <ul>
-                    <li><strong>Преимущества:</strong> Долгосрочная защита, безопасность для людей и животных, отсутствие запаха, профилактика.</li>
-                    <li><strong>Применение:</strong> В качестве завершающего этапа дезинсекции и для предотвращения повторного заражения.</li>
-                </ul>
-
-                <h2>Как проходит дезинсекция от блох</h2>
-                <p>Профессиональный подход на каждом этапе работы обеспечивает гарантированный результат и безопасность для наших клиентов.</p>
-
-                <ol>
-                    <li>
-                        <h3>Заявка и консультация</h3>
-                        <p>Вы оставляете заявку на сайте или по телефону. Наш менеджер связывается с вами, консультирует по всем вопросам, связанным с уничтожением блох, и назначает удобное время для выезда специалиста. Мы расскажем, как подготовить помещение к обработке.</p>
-                    </li>
-                    <li>
-                        <h3>Подготовка помещения</h3>
-                        <p>Перед приездом специалиста необходимо провести несложную подготовку: убрать продукты питания, посуду, личные вещи, отодвинуть мебель от стен, по возможности снять постельное белье и постирать его при высокой температуре. Это обеспечит максимальную эффективность обработки.</p>
-                    </li>
-                    <li>
-                        <h3>Профессиональная обработка</h3>
-                        <p>Специалист СибДез приезжает в назначенное время с профессиональным оборудованием и сертифицированными препаратами. Проводится тщательная обработка всех мест скопления и передвижения блох, включая плинтусы, щели, ковры, мягкую мебель, подстилки животных.</p>
-                    </li>
-                    <li>
-                        <h3>Контроль и рекомендации</h3>
-                        <p>После обработки специалист дает подробные рекомендации по дальнейшим действиям, проветриванию помещения и профилактике повторного появления блох. При необходимости, в рамках гарантии, проводится повторный осмотр или обработка.</p>
-                    </li>
-                    <li>
-                        <h3>Гарантия</h3>
-                        <p>Мы предоставляем официальную гарантию на все виды работ по уничтожению блох. В случае повторного появления насекомых в течение гарантийного срока, мы проведем повторную обработку абсолютно бесплатно.</p>
-                    </li>
-                </ol>
-
-                <h2>Часто задаваемые вопросы об уничтожении блох</h2>
-                <div class="faq">
-                    <div class="faq-item">
-                        <h3>❓ Сколько времени занимает обработка от блох?</h3>
-                        <p>Обычно обработка однокомнатной квартиры занимает от 30 до 60 минут, в зависимости от степени заражения и выбранного метода. Для больших помещений или при сильном заражении время может увеличиться.</p>
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Наши методы уничтожения блох</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Используем современные технологии и сертифицированные препараты для максимальной эффективности</p>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-snowflake"></i>
                     </div>
-                    <div class="faq-item">
-                        <h3>❓ Безопасны ли препараты для детей и домашних животных?</h3>
-                        <p>Мы используем только сертифицированные препараты 4 класса опасности, которые безопасны для людей и домашних животных при соблюдении всех рекомендаций специалиста. После обработки необходимо тщательно проветрить помещение.</p>
+                    <h3>❄️ Холодный туман</h3>
+                    <p>Мелкодисперсное распыление инсектицидов создает облако микрочастиц размером 5-30 микрон. Туман проникает в самые труднодоступные места, где прячутся блохи.</p>
+                    <ul class="service-features">
+                        <li>Проникает в любые щели и трещины</li>
+                        <li>Равномерно распределяется по всему помещению</li>
+                        <li>Уничтожает блох в местах их скопления</li>
+                        <li>Эффективен против яиц и личинок</li>
+                        <li>Не оставляет пятен на мебели</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-fire"></i>
                     </div>
-                    <div class="faq-item">
-                        <h3>❓ Нужно ли покидать помещение во время обработки от блох?</h3>
-                        <p>Да, на время обработки и в течение 2-3 часов после нее рекомендуется покинуть помещение. Это необходимо для вашей безопасности и максимальной эффективности действия инсектицидов.</p>
+                    <h3>🔥 Горячий туман</h3>
+                    <p>Термическая обработка при температуре 50-60°C создает горячий туман, который мгновенно убивает блох и их яйца. Высокая температура усиливает действие препаратов.</p>
+                    <ul class="service-features">
+                        <li>100% уничтожение всех стадий развития блох</li>
+                        <li>Мгновенное действие на паразитов</li>
+                        <li>Глубокое проникновение в ткани и материалы</li>
+                        <li>Дополнительный термический эффект</li>
+                        <li>Подходит для сильно зараженных помещений</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-bullseye"></i>
                     </div>
-                    <div class="faq-item">
-                        <h3>❓ Когда можно возвращаться в помещение после обработки?</h3>
-                        <p>Возвращаться в помещение можно через 2-3 часа после обработки. Перед возвращением обязательно проветрите помещение в течение 30-60 минут. Проведите влажную уборку поверхностей, с которыми вы контактируете (столы, ручки дверей и т.д.).</p>
+                    <h3>🎯 Комплексный подход</h3>
+                    <p>Наши специалисты используют комбинированный подход, сочетая различные методы обработки в зависимости от степени заражения и особенностей помещения.</p>
+                    <ul class="service-features">
+                        <li>Индивидуальный подход к каждому случаю</li>
+                        <li>Сочетание нескольких методов обработки</li>
+                        <li>Максимальная эффективность</li>
+                        <li>Долговременный результат</li>
+                        <li>Безопасность для людей и животных</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="why-choose-content">
+                <h2 class="section-title" data-aos="fade-up">Почему выбирают СибДез для уничтожения блох?</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Более 15 лет успешного опыта в борьбе с блохами и другими вредителями в Омске</p>
+                
+                <div class="advantages-grid">
+                    <div class="advantage-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="advantage-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Гарантия 2 года</h3>
+                        <p>Самая длительная гарантия в Омске на дезинсекцию от блох. Если блохи появятся снова - повторная обработка бесплатно!</p>
                     </div>
-                    <div class="faq-item">
-                        <h3>❓ Что делать, если блохи появились снова после обработки?</h3>
-                        <p>В рамках нашей гарантии, если блохи появятся снова в течение гарантийного срока, мы проведем повторную обработку абсолютно бесплатно. Просто свяжитесь с нами, и мы оперативно решим проблему.</p>
+
+                    <div class="advantage-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="advantage-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Выезд в день обращения</h3>
+                        <p>Оперативное решение проблемы - выезд специалиста в течение 1-2 часов. Работаем круглосуточно без выходных.</p>
                     </div>
-                    <div class="faq-item">
-                        <h3>❓ Как подготовить квартиру к дезинсекции от блох?</h3>
-                        <ul>
-                            <li>Провести тщательную влажную уборку, пропылесосить ковры и мягкую мебель.</li>
-                            <li>Убрать продукты питания в герметичные контейнеры или холодильник.</li>
-                            <li>Спрятать посуду, личные вещи, игрушки.</li>
-                            <li>Отодвинуть мебель от стен на 10-15 см для доступа к плинтусам.</li>
-                            <li>Постирать постельное белье, подстилки животных при высокой температуре.</li>
-                            <li>Вывести домашних животных из помещения на время обработки.</li>
-                        </ul>
+
+                    <div class="advantage-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="advantage-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Безопасные препараты</h3>
+                        <p>Используем только сертифицированные инсектициды 4 класса опасности, безопасные для детей и домашних животных.</p>
                     </div>
-                    <div class="faq-item">
-                        <h3>❓ Сколько стоит уничтожение блох в Омске?</h3>
-                        <p>Стоимость дезинсекции от блох в Омске начинается от 1150₽. Окончательная цена зависит от площади помещения, степени заражения, выбранного метода обработки и дополнительных услуг. Узнать точную стоимость можно по телефону или через форму на сайте.</p>
+
+                    <div class="advantage-item" data-aos="fade-up" data-aos-delay="500">
+                        <div class="advantage-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Опытные специалисты</h3>
+                        <p>Команда сертифицированных дезинфекторов с опытом работы более 15 лет в сфере дезинсекции.</p>
+                    </div>
+
+                    <div class="advantage-item" data-aos="fade-up" data-aos-delay="600">
+                        <div class="advantage-icon">
+                            <i class="fas fa-ruble-sign"></i>
+                        </div>
+                        <h3>Доступные цены</h3>
+                        <p>Стоимость обработки от блох в Омске от 1150₽. Фиксированные цены без скрытых доплат.</p>
+                    </div>
+
+                    <div class="advantage-item" data-aos="fade-up" data-aos-delay="700">
+                        <div class="advantage-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h3>Возврат денег</h3>
+                        <p>100% гарантия результата или полный возврат средств. Официальный договор и страхование ответственности.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pest Types Section -->
+    <section class="pest-types">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Виды блох, которых мы уничтожаем в Омске</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Наши специалисты обладают глубокими знаниями и опытом для эффективной борьбы с любым видом блох</p>
+            
+            <div class="pest-grid">
+                <div class="pest-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pest-image" style="background-image: url('images/blohi-close.jpg');"></div>
+                    <h3>Кошачья блоха (Ctenocephalides felis)</h3>
+                    <p>Самый распространенный вид блох, паразитирующий на кошках, собаках и других теплокровных животных. Часто встречается в квартирах и домах.</p>
+                    <div class="pest-details">
+                        <p><strong>Размер:</strong> 1-3 мм<br>
+                        <strong>Цвет:</strong> Темно-коричневый<br>
+                        <strong>Опасность:</strong> Переносчик заболеваний, вызывает аллергические реакции</p>
                     </div>
                 </div>
 
-                <h2>Отзывы наших клиентов</h2>
-                <!-- Здесь можно добавить отзывы клиентов -->
+                <div class="pest-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pest-image" style="background-image: url('images/blohi-macro.jpg');"></div>
+                    <h3>Собачья блоха (Ctenocephalides canis)</h3>
+                    <p>Похожа на кошачью блоху, но чаще встречается на собаках. Также может кусать человека, вызывая зуд и раздражение.</p>
+                    <div class="pest-details">
+                        <p><strong>Размер:</strong> 1-4 мм<br>
+                        <strong>Цвет:</strong> Красновато-коричневый<br>
+                        <strong>Опасность:</strong> Переносчик заболеваний, вызывает зуд</p>
+                    </div>
+                </div>
 
+                <div class="pest-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="pest-image" style="background-image: url('images/blohi-detail.jpg');"></div>
+                    <h3>Человеческая блоха (Pulex irritans)</h3>
+                    <p>Встречается реже, но является наиболее опасной, так как предпочитает кровь человека. Может быть переносчиком серьезных заболеваний.</p>
+                    <div class="pest-details">
+                        <p><strong>Размер:</strong> 2-4 мм<br>
+                        <strong>Цвет:</strong> Темно-коричневый, почти черный<br>
+                        <strong>Опасность:</strong> Переносчик чумы, тифа, бруцеллеза</p>
+                    </div>
+                </div>
+
+                <div class="pest-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="pest-image" style="background-image: url('images/blohi-close.jpg');"></div>
+                    <h3>Крысиная блоха (Xenopsylla cheopis)</h3>
+                    <p>Основной переносчик чумы. Встречается в местах обитания крыс и мышей, может переходить на человека.</p>
+                    <div class="pest-details">
+                        <p><strong>Размер:</strong> 2-3 мм<br>
+                        <strong>Цвет:</strong> Светло-коричневый<br>
+                        <strong>Опасность:</strong> Главный переносчик чумы</p>
+                    </div>
+                </div>
+
+                <div class="pest-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="pest-image" style="background-image: url('images/blohi-macro.jpg');"></div>
+                    <h3>Земляные блохи (блохи-пескокопы)</h3>
+                    <p>Обитают в почве, траве, подвалах. Могут запрыгивать на человека или животных при контакте с зараженной территорией.</p>
+                    <div class="pest-details">
+                        <p><strong>Размер:</strong> 1-2 мм<br>
+                        <strong>Цвет:</strong> Черный<br>
+                        <strong>Опасность:</strong> Сильный зуд, аллергические реакции</p>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Как проходит обработка от блох</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Профессиональный подход на каждом этапе работы</p>
+            
+            <div class="process-steps">
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">1</div>
+                    <h3>Консультация и выезд</h3>
+                    <p>Бесплатная консультация по телефону. Выезд специалиста в течение 1-2 часов для осмотра помещения и оценки степени заражения.</p>
+                </div>
+
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">2</div>
+                    <h3>Подготовка помещения</h3>
+                    <p>Специалист поможет правильно подготовить помещение к обработке, даст рекомендации по защите мебели и личных вещей.</p>
+                </div>
+
+                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">3</div>
+                    <h3>Профессиональная обработка</h3>
+                    <p>Комплексная обработка помещения современными препаратами с использованием холодного или горячего тумана.</p>
+                </div>
+
+                <div class="process-step" data-aos="fade-up" data-aos-delay="500">
+                    <div class="step-number">4</div>
+                    <h3>Контроль результата</h3>
+                    <p>Выдача гарантийного талона на 2 года. Консультации по профилактике. Бесплатная повторная обработка при необходимости.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" id="contacts">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Заказать обработку от блох</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Оставьте заявку и получите бесплатную консультацию специалиста</p>
+            
+            <div class="form-container" data-aos="fade-up" data-aos-delay="200">
+                <form id="orderForm" onsubmit="submitForm(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="address">Адрес</label>
+                            <input type="text" id="address" name="address" placeholder="Укажите район или адрес">
+                        </div>
+                        <div class="form-group">
+                            <label for="area">Площадь помещения</label>
+                            <select id="area" name="area">
+                                <option value="">Выберите площадь</option>
+                                <option value="до 30 м²">до 30 м²</option>
+                                <option value="30-50 м²">30-50 м²</option>
+                                <option value="50-80 м²">50-80 м²</option>
+                                <option value="80-120 м²">80-120 м²</option>
+                                <option value="более 120 м²">более 120 м²</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="problem">Опишите проблему</label>
+                        <textarea id="problem" name="problem" rows="4" placeholder="Расскажите о степени заражения, где замечены блохи, есть ли домашние животные..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time">Удобное время для звонка</label>
+                        <select id="time" name="time">
+                            <option value="">Любое время</option>
+                            <option value="утром (9:00-12:00)">утром (9:00-12:00)</option>
+                            <option value="днем (12:00-17:00)">днем (12:00-17:00)</option>
+                            <option value="вечером (17:00-21:00)">вечером (17:00-21:00)</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Отправить заявку
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="footer-main">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2023 СибДез Омск. Все права защищены.</p>
-                <nav class="footer-nav">
+                <div class="footer-section">
+                    <h3>СибДез Омск</h3>
+                    <p>Профессиональная служба дезинсекции в Омске. Более 15 лет успешного опыта в борьбе с вредителями.</p>
+                    <p><strong>Лицензия:</strong> № 55.01.13.002.Л.000123.03.17</p>
+                    <p><strong>Страхование:</strong> Полис ответственности на 1 млн рублей</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Контакты</h3>
                     <ul>
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a href="#services">Услуги</a></li>
-                        <li><a href="#about">О нас</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+79136147446">+7 913 614 7446</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@sibdezomsk.ru">info@sibdezomsk.ru</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Омск, работаем по всему городу</li>
+                        <li><i class="fas fa-clock"></i> Круглосуточно, без выходных</li>
                     </ul>
-                </nav>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Услуги</h3>
+                    <ul>
+                        <li><a href="klopy.html">Уничтожение клопов</a></li>
+                        <li><a href="tarakany.html">Уничтожение тараканов</a></li>
+                        <li><a href="blohi.html">Уничтожение блох</a></li>
+                        <li><a href="gryzuny.html">Уничтожение грызунов</a></li>
+                        <li><a href="index.html">Все услуги</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Гарантии</h3>
+                    <ul>
+                        <li>✓ Гарантия результата 2 года</li>
+                        <li>✓ Безопасные сертифицированные препараты</li>
+                        <li>✓ Выезд в день обращения</li>
+                        <li>✓ Возврат денег при неэффективности</li>
+                        <li>✓ Официальный договор</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 СибДез Омск. Все права защищены. | <a href="privacy.html">Политика конфиденциальности</a></p>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-        AOS.init();
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Smooth scrolling
+        function scrollToForm() {
+            document.getElementById('contacts').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Form submission
+        function submitForm(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Here you would typically send the data to your server
+            console.log('Form data:', data);
+            
+            // Show success message
+            alert('Спасибо за заявку! Наш специалист свяжется с вами в течение 15 минут.');
+            
+            // Reset form
+            event.target.reset();
+        }
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header-main');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 2px 30px rgba(0, 0, 0, 0.15)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            }
+        });
+
+        // Phone number formatting
+        document.getElementById('phone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 0) {
+                if (value[0] === '8') value = '7' + value.slice(1);
+                if (value[0] === '7') {
+                    value = value.slice(0, 11);
+                    const formatted = '+7 (' + value.slice(1, 4) + ') ' + 
+                                    value.slice(4, 7) + '-' + 
+                                    value.slice(7, 9) + '-' + 
+                                    value.slice(9, 11);
+                    e.target.value = formatted;
+                }
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Mobile menu toggle (if needed)
+        function toggleMobileMenu() {
+            const nav = document.querySelector('.main-nav');
+            nav.classList.toggle('mobile-open');
+        }
+
+        // Add mobile menu styles if needed
+        if (window.innerWidth <= 768) {
+            const style = document.createElement('style');
+            style.textContent = `
+                .main-nav {
+                    display: none;
+                }
+                .main-nav.mobile-open {
+                    display: block;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    background: white;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                    padding: 20px;
+                }
+                .mobile-menu-btn {
+                    display: block;
+                    background: none;
+                    border: none;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                }
+            `;
+            document.head.appendChild(style);
+        }
     </script>
 </body>
 </html>
