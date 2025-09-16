@@ -1,42 +1,12 @@
 User-agent: *
 Allow: /
-
-# Разрешаем индексацию всех страниц
-Allow: /index.html
-Allow: /klopy.html
-Allow: /tarakany.html
-Allow: /grizuni.html
-Allow: /images/
-Allow: /css/
-Allow: /js/
-
-# Запрещаем индексацию служебных файлов
 Disallow: /*.pdf
 Disallow: /admin/
 Disallow: /temp/
 Disallow: /backup/
 
-# Указываем расположение sitemap
-Sitemap: https://sibdezomsk.ru/sitemap.xml
+Sitemap: https://incrouble18.github.io/sibdez/sitemap.xml
 
-# Настройки для Яндекса
 User-agent: Yandex
-Allow: /
-
-# Настройки для Google
-User-agent: Googlebot
-Allow: /
-
-# Настройки для Mail.ru
-User-agent: Mail.RU_Bot
-Allow: /
-
-# Время задержки между запросами (в секундах)
 Crawl-delay: 1
-
-# Дополнительная информация
-# Сайт: СибДез Омск - Дезинсекция и дератизация
-# URL: https://incrouble18.github.io/sibdez/
-# Контакт: +7 913 614 7446
-
 
