@@ -1686,21 +1686,7 @@
         </div>
     </section>
 
-    <!-- Плавающие кнопки действий -->
-    <div class="floating-actions">
-        <div class="floating-btn" id="callback-btn">
-            <i class="fas fa-phone-alt"></i>
-            <span class="tooltip">Позвонить 24/7</span>
-        </div>
-        <div class="floating-btn" id="telegram-btn">
-            <i class="fab fa-telegram-plane"></i>
-            <span class="tooltip">Telegram</span>
-        </div>
-        <div class="floating-btn" id="whatsapp-btn">
-            <i class="fab fa-whatsapp"></i>
-            <span class="tooltip">WhatsApp</span>
-        </div>
-    </div>
+    <!-- Плавающие кнопки действий (удалены по запросу пользователя) -->
 
     <!-- ВРЕДИТЕЛИ -->
     <section class="pests" id="pests">
@@ -3767,18 +3753,7 @@
             }
         });
 
-        // Плавающие кнопки
-        document.getElementById('callback-btn').addEventListener('click', function() {
-            window.location.href = 'tel:+79136147446';
-        });
-
-        document.getElementById('telegram-btn').addEventListener('click', function() {
-            window.open('https://t.me/sibdez_omsk', '_blank');
-        });
-
-        document.getElementById('whatsapp-btn').addEventListener('click', function() {
-            window.open('https://wa.me/79136147446', '_blank');
-        });
+        // Плавающие кнопки (удалены по запросу пользователя)
 
         // Обработка главной формы с AJAX
         // Добавляем функцию showSuccessModal, которая используется в обеих формах
