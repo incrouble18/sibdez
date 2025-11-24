@@ -5,8 +5,9 @@ Disallow: /admin/
 Disallow: /temp/
 Disallow: /backup/
 
-Sitemap: https://incrouble18.github.io/sibdez/sitemap.xml
+Sitemap: https://sibdezomsk.ru/sitemap.xml
 
 User-agent: Yandex
 Crawl-delay: 1
+Host: https://sibdezomsk.ru
 
