@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как избавиться от двухвосток в доме? Опасна ли уховертка | СибДез Омск</title>
+    <meta name="description" content="Узнайте, как избавиться от двухвосток (уховерток) в доме. Опасны ли они для человека и домашних животных? Эффективные методы борьбы от СЭС 'СибДез Омск'.">
+    <meta name="keywords" content="двухвостки в доме, как избавиться от двухвосток, уховертка опасна, уничтожение двухвосток Омск, СЭС Омск">
+    <link rel="canonical" href="https://sibdezomsk.ru/article-3.html">
+    
+    <!-- CDN Библиотеки -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Цветовая палитра */
+            --primary: #FF3333;
+            --primary-dark: #CC0000;
+            --primary-light: #FFE5E5;
+            --secondary: #00CC44;
+            --secondary-dark: #009933;
+            --secondary-light: #E5FFE9;
+            --accent: #FFD700;
+            --accent-dark: #FFC700;
+            --danger: #FF0000;
+            --success: #00AA00;
+            --warning: #FF8800;
+            --dark: #1A1A2E;
+            --light: #ffffff;
+            --gray: #F8FAFC;
+            --gray-dark: #E2E8F0;
+            --text: #2D3748;
+            --text-light: #718096;
+            
+            /* Тени */
+            --shadow-sm: 0 4px 6px rgba(255,51,51,0.1);
+            --shadow-md: 0 10px 15px rgba(255,51,51,0.15);
+            --shadow-lg: 0 20px 25px rgba(255,51,51,0.2);
+            --shadow-xl: 0 25px 50px rgba(255,51,51,0.25);
+            --shadow-primary: 0 8px 30px rgba(255, 51, 51, 0.4);
+            --shadow-secondary: 0 8px 30px rgba(0, 204, 68, 0.3);
+            --shadow-accent: 0 8px 30px rgba(255, 215, 0, 0.3);
+            
+            /* Градиенты */
+            --gradient-primary: linear-gradient(135deg, #FF3333 0%, #FF6600 100%);
+            --gradient-secondary: linear-gradient(135deg, #00CC44 0%, #00AA33 100%);
+            --gradient-danger: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
+            --gradient-success: linear-gradient(135deg, #00AA00 0%, #008800 100%);
+            --gradient-dark: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%);
+            --gradient-rainbow: linear-gradient(135deg, #FF3333 0%, #00CC44 50%, #FFD700 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text);
+            overflow-x: hidden;
+            background-color: var(--light);
+            line-height: 1.6;
+        }
+
+        /* Стили для кнопок */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            border: none;
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: var(--shadow-primary);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 40px rgba(255, 51, 51, 0.5);
+        }
+
+        /* Контейнер */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Верхняя панель с контактами */
+        .topbar {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 12px 0;
+            font-size: 14px;
+            position: relative;
+            z-index: 1001;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .topbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .topbar-contact {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .topbar-contact a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .topbar-contact a:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        .topbar-contact a i {
+            margin-right: 8px;
+            font-size: 16px;
+        }
+
+        .topbar-social {
+            display: flex;
+            gap: 15px;
+        }
+
+        .topbar-social a {
+            color: white;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .topbar-social a:hover {
+            transform: scale(1.2) translateY(-2px);
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Основная навигация */
+        .header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.4s ease;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(15px);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 65px;
+            margin-right: 12px;
+            transition: all 0.3s ease;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+        }
+
+        .logo-text {
+            font-size: 26px;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 0.5px;
+            line-height: 1.2;
+        }
+
+        .logo-subtitle {
+            font-size: 14px;
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        /* Навигация */
+        .nav {
+            display: flex;
+            gap: 12px;
+        }
+
+        .nav-link {
+            padding: 12px 18px;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+            letter-spacing: 0.3px;
+            border-radius: 25px;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+            background: var(--primary-light);
+            transform: translateY(-2px);
+        }
+
+        .nav-link.active {
+            color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        /* Стили для контента статьи */
+        .article-content-section {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+
+        .article-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .article-title-main {
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .article-meta {
+            font-size: 16px;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .article-image-main {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+            font-size: 18px;
+            line-height: 1.7;
+            color: var(--text);
+        }
+
+        .article-body h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--primary);
+            padding-left: 15px;
+        }
+
+        .article-body h3 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text);
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .article-body ul {
+            margin-bottom: 25px;
+            padding-left: 25px;
+        }
+
+        .article-body li {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+
+        .article-body strong {
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+
+        .call-to-action {
+            background-color: var(--primary-light);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 50px;
+            border: 2px solid var(--primary);
+        }
+
+        .call-to-action h3 {
+            color: var(--primary-dark);
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .call-to-action p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        /* Dropdown Navigation Styles */
+        .nav-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .nav-dropdown-toggle {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .nav-dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: var(--light);
+            min-width: 200px;
+            box-shadow: var(--shadow-md);
+            z-index: 1000;
+            border-radius: 8px;
+            overflow: hidden;
+            top: 100%; /* Position below the toggle */
+            left: 0;
+            margin-top: 5px;
+            border: 1px solid var(--gray-dark);
+        }
+
+        .nav-dropdown:hover .nav-dropdown-menu {
+            display: block;
+        }
+
+        .nav-dropdown-item {
+            color: var(--text);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.2s, color 0.2s;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .nav-dropdown-item:hover {
+            background-color: var(--primary-light);
+            color: var(--primary-dark);
+        }
+
+        /* Adjust main nav links to accommodate dropdown */
+        .nav a, .nav-dropdown-toggle {
+            padding: 10px 15px;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.3s, background-color 0.3s;
+            border-radius: 5px;
+        }
+
+        .nav a:hover, .nav-dropdown-toggle:hover {
+            color: var(--primary);
+        }
+
+        /* Mobile menu adjustments for dropdown */
+        @media (max-width: 992px) {
+            .nav-dropdown-menu {
+                position: static;
+                box-shadow: none;
+                border: none;
+                margin-top: 0;
+                border-radius: 0;
+                background-color: var(--gray);
+            }
+
+            .nav-dropdown-item {
+                padding-left: 30px; /* Indent dropdown items in mobile menu */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Topbar (скопировано из index.html) -->
+    <div class="topbar">
+        <div class="container topbar-container">
+            <div class="topbar-contact">
+                <a href="tel:+79136147446"><i class="fas fa-phone-alt"></i> +7 (913) 614-74-46</a>
+                <a href="mailto:info@sibdez-omsk.ru"><i class="fas fa-envelope"></i> info@sibdez-omsk.ru</a>
+            </div>
+            <div class="topbar-social">
+                <a href="https://vk.com/sibdez_omsk" target="_blank" title="ВКонтакте"><i class="fab fa-vk"></i></a>
+                <a href="https://t.me/sibdez_omsk" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                <a href="https://wa.me/79136147446" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header (скопировано из index.html) -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logosibdez2.png" alt="Логотип СибДез Омск">
+                <div class="logo-text">
+                    <span class="logo-title">СибДез</span>
+                    <span class="logo-subtitle">Служба дезинсекции</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <div class="nav-dropdown">
+                    <a href="index.html#services" class="nav-link nav-dropdown-toggle">Услуги <i class="fas fa-caret-down"></i></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="klopy.html" class="nav-dropdown-item">Уничтожение Клопов</a>
+                        <a href="tarakany.html" class="nav-dropdown-item">Уничтожение Тараканов</a>
+                        <a href="blohi.html" class="nav-dropdown-item">Уничтожение Блох</a>
+                        <a href="index.html#prices" class="nav-dropdown-item">Цены</a>
+                        <a href="index.html#reviews" class="nav-dropdown-item">Отзывы</a>
+                        <a href="index.html#faq" class="nav-dropdown-item">Вопросы</a>
+                    </div>
+                </div>
+                <a href="articles.html" class="nav-link active">Статьи</a>
+                <a href="index.html#contacts" class="nav-link">Контакты</a>   </nav>
+            <a href="tel:+79136147446" class="btn btn-primary btn-sm">
+                <i class="fas fa-phone-alt btn-icon"></i> Вызвать СЭС
+            </a>
+        </div>
+    </header>
+
+    <!-- Секция Контента Статьи -->
+    <section class="article-content-section">
+        <div class="container">
+            <div class="article-header">
+                <h1 class="article-title-main">Как избавиться от двухвосток в доме? Опасна ли уховертка</h1>
+                <p class="article-meta">Опубликовано: 10.12.2025 | Автор: Эксперт СЭС "СибДез Омск"</p>
+            </div>
+
+            <img src="images/article_placeholder_2.jpg" alt="Двухвостка (уховертка) в доме" class="article-image-main">
+
+            <div class="article-body">
+                <p>Двухвостки, или уховертки (Dermaptera), — это насекомые, которые часто вызывают беспокойство у жителей Омска, особенно в частных домах и на первых этажах многоквартирных зданий. Их характерный внешний вид с клешнями на конце брюшка породил множество мифов об их опасности. В этой статье эксперты СЭС "СибДез Омск" развеют мифы и расскажут, как эффективно бороться с этими незваными гостями.</p>
+
+                <h2>Опасна ли уховертка для человека? Развенчиваем мифы</h2>
+                <p>Самый распространенный миф связан с названием "уховертка" — якобы насекомое может заползти в ухо человека и прогрызть барабанную перепонку. Это не более чем страшилка. На самом деле:</p>
+                <ul>
+                    <li><strong>Уховертки не ядовиты.</strong> Они не переносят опасных для человека заболеваний.</li>
+                    <li><strong>Укус или укол клешнями.</strong> В редких случаях, при самообороне, двухвостка может ущипнуть человека своими клешнями (церками). Это может быть немного болезненно, но не опасно и не требует медицинского вмешательства.</li>
+                    <li><strong>Основной вред.</strong> Двухвостки питаются в основном разлагающейся органикой, а также могут повредить садовые растения, но в доме их присутствие — это, прежде всего, эстетическая проблема и признак повышенной влажности.</li>
+                </ul>
+
+                <h2>Почему двухвостки появляются в доме?</h2>
+                <p>Уховертки — влаголюбивые насекомые. Их появление в жилых помещениях всегда связано с поиском влаги и укрытия. Основные причины:</p>
+                <ul>
+                    <li><strong>Высокая влажность:</strong> Протечки труб, плохо проветриваемые подвалы, ванные комнаты и кухни.</li>
+                    <li><strong>Близость к земле:</strong> Частные дома, первые этажи, а также квартиры, расположенные рядом с сырыми подвалами.</li>
+                    <li><strong>Наличие органики:</strong> Скопление влажного мусора, старых газет, дров или компоста рядом с домом.</li>
+                    <li><strong>Пути проникновения:</strong> Щели в фундаменте, трещины в стенах, неплотно закрытые окна и двери.</li>
+                </ul>
+
+                <h2>Как избавиться от двухвосток: Профессиональный подход</h2>
+                <p>Самостоятельная борьба с двухвостками часто дает лишь временный эффект, так как невозможно полностью устранить все места их обитания и проникновения. СЭС "СибДез Омск" предлагает профессиональное уничтожение двухвосток, которое включает:</p>
+                <p><strong>1. Комплексная обработка:</strong> Мы используем современные инсектициды пролонгированного действия, которые наносятся на места скопления и пути передвижения насекомых (плинтусы, углы, вентиляционные шахты, подвалы).</p>
+                <p><strong>2. Барьерная защита:</strong> Создание защитного барьера по периметру помещения, чтобы предотвратить повторное проникновение извне.</p>
+                <p><strong>3. Рекомендации по устранению причин:</strong> Наши специалисты дадут четкие инструкции по снижению влажности и устранению благоприятных условий для жизни двухвосток.</p>
+
+                <div class="call-to-action">
+                    <h3>Не дайте двухвосткам шанса!</h3>
+                    <p>Если вы столкнулись с нашествием двухвосток и хотите решить проблему быстро и с гарантией, не откладывайте звонок.</p>
+                    <a href="tel:+79136147446" class="btn btn-primary">
+                        <i class="fas fa-phone-alt btn-icon"></i> Вызвать СЭС в Омске
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер (минимальный для шаблона) -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 СибДез Омск. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Скрипты (минимальные для шаблона) -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
