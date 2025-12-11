@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профессиональная дезинфекция помещений в Омске от вирусов, бактерий и плесени | СибДез Омск</title>
+    <meta name="description" content="Профессиональная дезинфекция квартир, домов и коммерческих помещений в Омске. Уничтожение вирусов, бактерий, грибка и запахов. Безопасные препараты 4 класса. Гарантия.">
+    <meta name="keywords" content="дезинфекция Омск, профессиональная дезинфекция, дезинфекция после болезни, устранение запахов, обработка озоном, дезинфекция от вирусов, дезинфекция квартиры цена">
+    <link rel="canonical" href="https://sibdezomsk.ru/dezinfekciya.html">
+    
+    <!-- CDN Библиотеки -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Цветовая палитра */
+            --primary: #FF3333;
+            --primary-dark: #CC0000;
+            --primary-light: #FFE5E5;
+            --secondary: #00CC44;
+            --secondary-dark: #009933;
+            --secondary-light: #E5FFE9;
+            --accent: #FFD700;
+            --accent-dark: #FFC700;
+            --danger: #FF0000;
+            --success: #00AA00;
+            --warning: #FF8800;
+            --dark: #1A1A2E;
+            --light: #ffffff;
+            --gray: #F8FAFC;
+            --gray-dark: #E2E8F0;
+            --text: #2D3748;
+            --text-light: #718096;
+            
+            /* Тени */
+            --shadow-sm: 0 4px 6px rgba(255,51,51,0.1);
+            --shadow-md: 0 10px 15px rgba(255,51,51,0.15);
+            --shadow-lg: 0 20px 25px rgba(255,51,51,0.2);
+            --shadow-xl: 0 25px 50px rgba(255,51,51,0.25);
+            --shadow-primary: 0 8px 30px rgba(255, 51, 51, 0.4);
+            --shadow-secondary: 0 8px 30px rgba(0, 204, 68, 0.3);
+            --shadow-accent: 0 8px 30px rgba(255, 215, 0, 0.3);
+            
+            /* Градиенты */
+            --gradient-primary: linear-gradient(135deg, #FF3333 0%, #FF6600 100%);
+            --gradient-secondary: linear-gradient(135deg, #00CC44 0%, #00AA33 100%);
+            --gradient-danger: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
+            --gradient-success: linear-gradient(135deg, #00AA00 0%, #008800 100%);
+            --gradient-dark: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%);
+            --gradient-rainbow: linear-gradient(135deg, #FF3333 0%, #00CC44 50%, #FFD700 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text);
+            overflow-x: hidden;
+            background-color: var(--light);
+            line-height: 1.6;
+        }
+
+        /* Стили для кнопок */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            border: none;
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: var(--shadow-primary);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 40px rgba(255, 51, 51, 0.5);
+        }
+
+        /* Контейнер */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Верхняя панель с контактами */
+        .topbar {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 12px 0;
+            font-size: 14px;
+            position: relative;
+            z-index: 1001;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .topbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .topbar-contact {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .topbar-contact a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .topbar-contact a:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        .topbar-contact a i {
+            margin-right: 8px;
+            font-size: 16px;
+        }
+
+        .topbar-social {
+            display: flex;
+            gap: 15px;
+        }
+
+        .topbar-social a {
+            color: white;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .topbar-social a:hover {
+            transform: scale(1.2) translateY(-2px);
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Основная навигация */
+        .header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.4s ease;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(15px);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 65px;
+            margin-right: 12px;
+            transition: all 0.3s ease;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+        }
+
+        .logo-title {
+            font-size: 26px;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 0.5px;
+            line-height: 1.2;
+        }
+
+        .logo-subtitle {
+            font-size: 14px;
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        /* Навигация */
+        .nav {
+            display: flex;
+            gap: 12px;
+        }
+
+        .nav-link {
+            padding: 12px 18px;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+            letter-spacing: 0.3px;
+            border-radius: 25px;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+            background: var(--primary-light);
+            transform: translateY(-2px);
+        }
+
+        .nav-link.active {
+            color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        /* Стили для контента статьи */
+        .article-content-section {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+
+        .article-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .article-title-main {
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .article-meta {
+            font-size: 16px;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .article-image-main {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+            font-size: 18px;
+            line-height: 1.7;
+            color: var(--text);
+        }
+
+        .article-body h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--primary);
+            padding-left: 15px;
+        }
+
+        .article-body h3 {
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-left: 15px;
+        }
+
+        .article-body ul, .article-body ol {
+            margin-bottom: 25px;
+            padding-left: 40px;
+            font-size: 18px;
+            color: var(--text);
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+
+        .article-body table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow-sm);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .article-body th, .article-body td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--gray-dark);
+        }
+
+        .article-body th {
+            background-color: var(--primary);
+            color: var(--light);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+
+        .article-body tr:nth-child(even) {
+            background-color: var(--gray);
+        }
+
+        .article-body tr:hover {
+            background-color: var(--primary-light);
+        }
+
+        .article-body img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Футер */
+        .footer {
+            background: var(--dark);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Topbar (скопировано из index.html) -->
+    <div class="topbar">
+        <div class="container topbar-container">
+            <div class="topbar-contact">
+                <a href="tel:+79136147446"><i class="fas fa-phone-alt"></i> +7 (913) 614-74-46</a>
+                <a href="mailto:info@sibdez-omsk.ru"><i class="fas fa-envelope"></i> info@sibdez-omsk.ru</a>
+            </div>
+            <div class="topbar-social">
+                <a href="https://vk.com/sibdez_omsk" target="_blank" title="ВКонтакте"><i class="fab fa-vk"></i></a>
+                <a href="https://t.me/sibdez_omsk" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                <a href="https://wa.me/79136147446" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header (скопировано из index.html) -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logosibdez2.png" alt="Логотип СибДез Омск">
+                <div class="logo-text">
+                    <span class="logo-title">СибДез</span>
+                    <span class="logo-subtitle">Служба дезинсекции</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="klopy.html" class="nav-link">Клопы</a>
+                <a href="tarakany.html" class="nav-link">Тараканы</a>
+                <a href="gryzuny.html" class="nav-link">Грызуны</a>
+                <a href="dezinfekciya.html" class="nav-link active">Дезинфекция</a>
+                <a href="articles.html" class="nav-link">Статьи</a>
+                <a href="#contacts" class="nav-link">Контакты</a>
+            </nav>
+            <a href="tel:+79136147446" class="btn btn-primary btn-sm">
+                <i class="fas fa-phone-alt btn-icon"></i> Вызвать СЭС
+            </a>
+        </div>
+    </header>
+
+    <!-- Article Content Section -->
+    <section class="article-content-section">
+        <div class="container">
+            <div class="article-header">
+                <h1 class="article-title-main">Профессиональная дезинфекция помещений в Омске от вирусов, бактерий и плесени</h1>
+                <p class="article-meta">Опубликовано: 11 декабря 2025 | Автор: СибДез Омск</p>
+            </div>
+
+            <img src="images/dezinfekciya-cover.jpg" alt="Специалист проводит профессиональную дезинфекцию помещения методом холодного тумана" class="article-image-main">
+
+            <div class="article-body">
+                <h2>Что такое дезинфекция и почему она необходима?</h2>
+                <p><strong>Дезинфекция</strong> — это комплекс мер, направленных на уничтожение патогенных (болезнетворных) микроорганизмов: вирусов, бактерий, грибков и их спор. В отличие от обычной уборки, которая удаляет грязь, профессиональная дезинфекция гарантирует полное обеззараживание поверхностей и воздуха, создавая безопасную и здоровую среду.</p>
+
+                <h3>Когда необходима профессиональная дезинфекция?</h3>
+                <p>Профессиональная обработка необходима в следующих случаях:</p>
+                <ul>
+                    <li>**После болезни:** Обеззараживание квартиры после того, как в ней находился человек с инфекционным заболеванием (грипп, ОРВИ, COVID-19, туберкулез и др.).</li>
+                    <li>**Устранение плесени и грибка:** Обработка мест с повышенной влажностью (ванная, подвал, углы комнат) для уничтожения спор плесени, которые вызывают аллергию и портят имущество.</li>
+                    <li>**Устранение неприятных запахов:** Дезинфекция часто включает обработку, которая нейтрализует запахи после пожаров, затоплений, длительного пребывания больных или животных.</li>
+                    <li>**Дезинфекция транспорта:** Регулярная обработка автомобилей, особенно общественного транспорта, такси и рефрижераторов, для соблюдения санитарных норм.</li>
+                    <li>**Профилактика:** Периодическая обработка коммерческих помещений (офисы, склады, общепит) для поддержания высокого уровня санитарной безопасности.</li>
+                </ul>
+
+                <h2>Преимущества профессиональной дезинфекции от "СибДез"</h2>
+                <p>Мы гарантируем не только чистоту, но и безопасность для вас и вашей семьи.</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Преимущество</th>
+                            <th>Описание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>**Безопасные препараты 4 класса**</td>
+                            <td>Мы используем только сертифицированные дезинфицирующие средства, относящиеся к IV классу малоопасных веществ. Они эффективны против микробов, но не вредят людям, домашним животным и не оставляют следов на мебели.</td>
+                        </tr>
+                        <tr>
+                            <td>**Гарантия чистоты**</td>
+                            <td>Наша работа направлена на полное уничтожение всех патогенов. Мы предоставляем гарантию на качество проведенной обработки.</td>
+                        </tr>
+                        <tr>
+                            <td>**Сертификаты и опыт**</td>
+                            <td>Все наши специалисты прошли обучение и имеют необходимые сертификаты. Мы работаем в Омске с 2009 года, обеспечивая экспертный подход к каждому случаю.</td>
+                        </tr>
+                        <tr>
+                            <td>**Оперативный выезд**</td>
+                            <td>Мы готовы выехать на объект в день обращения, чтобы как можно быстрее восстановить санитарную безопасность вашего помещения.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Методы дезинфекции: Холодный туман и Озонирование</h2>
+                <p>Для максимальной эффективности и глубокого проникновения дезинфицирующего раствора мы применяем передовые технологии.</p>
+
+                <h3>1. Обработка методом "Холодный туман"</h3>
+                <p><strong>Холодный туман</strong> — это распыление дезинфицирующего раствора с помощью генератора, который разбивает жидкость на микроскопические частицы размером до 80 микрон.</p>
+                <ul>
+                    <li>**Принцип действия:** Мельчайшие капли образуют облако, которое заполняет весь объем помещения, проникая в самые труднодоступные места: щели, вентиляционные решетки, под обои и в обивку мебели.</li>
+                    <li>**Эффективность:** Идеально подходит для уничтожения вирусов и бактерий, так как обеспечивает равномерное покрытие всех поверхностей.</li>
+                    <li>**Преимущество:** Не оставляет мокрых следов и разводов, быстро выветривается.</li>
+                </ul>
+                <img src="images/cold-fog-disinfection.jpg" alt="Схема работы холодного тумана: проникновение дезинфектора в щели и труднодоступные места">
+
+                <h3>2. Озонирование (Устранение запахов)</h3>
+                <p><strong>Озонирование</strong> — это обработка помещения газом озоном (O₃), который является одним из самых мощных природных окислителей.</p>
+                <ul>
+                    <li>**Принцип действия:** Озон разрушает молекулы, вызывающие неприятные запахи (гарь, сырость, табак, трупный запах), а также уничтожает вирусы, бактерии и споры плесени.</li>
+                    <li>**Применение:** Используется как дополнительная мера для полного устранения запахов и финишного обеззараживания воздуха.</li>
+                    <li>**Важно:** Во время озонирования в помещении не должны находиться люди и животные.</li>
+                </ul>
+
+                <h2>Цены на профессиональную дезинфекцию в Омске</h2>
+                <p>Мы предлагаем прозрачное ценообразование без скрытых доплат. Финальная стоимость зависит от площади помещения и выбранного метода обработки.</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Тип объекта</th>
+                            <th>Площадь</th>
+                            <th>Цена (от)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>**Комната в общежитии/коммунальной квартире**</td>
+                            <td>До 15 м²</td>
+                            <td>1200 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>**1-комнатная квартира**</td>
+                            <td>До 35 м²</td>
+                            <td>1500 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>**2-комнатная квартира**</td>
+                            <td>До 55 м²</td>
+                            <td>1800 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>**3-комнатная квартира**</td>
+                            <td>До 75 м²</td>
+                            <td>2200 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>**Дом/Коттедж**</td>
+                            <td>От 100 м²</td>
+                            <td>От 25 ₽/м²</td>
+                        </tr>
+                        <tr>
+                            <td>**Офисы, склады, коммерческие помещения**</td>
+                            <td>Индивидуальный расчет</td>
+                            <td>Договорная</td>
+                        </tr>
+                        <tr>
+                            <td>**Дополнительная услуга: Озонирование**</td>
+                            <td>Зависит от объема</td>
+                            <td>От 500 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>*Внимание: Цены указаны для ознакомления и могут варьироваться. Точную стоимость уточняйте по телефону.*</p>
+
+                <h2>Как подготовить помещение к дезинфекции?</h2>
+                <p>Правильная подготовка гарантирует максимальный результат и безопасность.</p>
+                <ol>
+                    <li>**Удалите продукты и посуду:** Все продукты питания, открытые емкости и посуду необходимо убрать в герметичные пакеты или вынести из помещения.</li>
+                    <li>**Уберите личные вещи:** Игрушки, предметы личной гигиены, одежду, постельное белье, которое не будет обрабатываться, также упакуйте или уберите в шкафы.</li>
+                    <li>**Обеспечьте доступ:** Отодвиньте мебель от стен, чтобы специалист мог обработать плинтусы и углы.</li>
+                    <li>**Проветривание:** После обработки необходимо покинуть помещение на 2-3 часа, а затем провести тщательное проветривание в течение 1-2 часов.</li>
+                </ol>
+
+                <h2>Часто задаваемые вопросы (FAQ)</h2>
+                
+                <h3>1. Насколько безопасны ваши препараты для детей и животных?</h3>
+                <p>Мы используем дезинфицирующие средства **IV класса опасности** (малоопасные). Они разрешены к применению в детских учреждениях и на объектах общественного питания. После проветривания помещение абсолютно безопасно для всех жильцов.</p>
+                
+                <h3>2. Поможет ли дезинфекция от COVID-19 и других вирусов?</h3>
+                <p>Да, наши препараты обладают широким спектром действия и эффективны против оболочечных вирусов, включая коронавирусы, а также против большинства известных бактерий и грибков. Мы проводим обработку по протоколам, рекомендованным Роспотребнадзором.</p>
+                
+                <h3>3. Как быстро исчезнет запах после обработки?</h3>
+                <p>После обработки методом "Холодный туман" может остаться легкий технический запах, который полностью исчезает после тщательного проветривания. Если проблема в самом запахе (гарь, сырость), мы рекомендуем дополнительное **Озонирование**, которое гарантированно нейтрализует любые органические и химические запахи.</p>
+                
+                <h3>4. Сколько времени занимает сама процедура?</h3>
+                <p>В среднем, обработка однокомнатной квартиры занимает от 30 до 45 минут. Время зависит от площади и степени загрязнения. После обработки необходимо выдержать экспозицию (2-3 часа) и проветрить помещение.</p>
+                
+                <h3>5. Вы работаете по всей территории Омска?</h3>
+                <p>Да, мы осуществляем оперативный выезд во все 5 округов Омска: Центральный, Советский, Кировский, Ленинский и Октябрьский, а также в пригородные районы.</p>
+                
+                <h3>6. Можно ли проводить дезинфекцию самостоятельно?</h3>
+                <p>Бытовые средства не обеспечивают того уровня обеззараживания, который достигается профессиональными концентратами и оборудованием ("Холодный туман"). Самостоятельная обработка может быть неэффективной, особенно в случае плесени или после серьезных инфекций. Профессионалы гарантируют результат.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2009 - 2025 СибДез Омск. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html>
