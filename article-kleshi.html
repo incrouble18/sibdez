@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Что происходит, когда кусает клещ? Акарицидная обработка участка | СибДез Омск</title>
+    <meta name="description" content="Узнайте, что делать, если укусил клещ: пошаговая инструкция по удалению, симптомы опасных болезней (энцефалит, боррелиоз) и почему акарицидная обработка участка — лучшая защита для вашей семьи в Омске.">
+    <meta name="keywords" content="укус клеща, что делать если укусил клещ, акарицидная обработка участка, клещевой энцефалит, боррелиоз, обработка от клещей Омск, СЭС Омск, как удалить клеща, симптомы укуса клеща">
+    <link rel="canonical" href="https://sibdezomsk.ru/article-kleshi.html">
+    
+    <!-- CDN Библиотеки -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Цветовая палитра */
+            --primary: #FF3333;
+            --primary-dark: #CC0000;
+            --primary-light: #FFE5E5;
+            --secondary: #00CC44;
+            --secondary-dark: #009933;
+            --secondary-light: #E5FFE9;
+            --accent: #FFD700;
+            --accent-dark: #FFC700;
+            --danger: #FF0000;
+            --success: #00AA00;
+            --warning: #FF8800;
+            --dark: #1A1A2E;
+            --light: #ffffff;
+            --gray: #F8FAFC;
+            --gray-dark: #E2E8F0;
+            --text: #2D3748;
+            --text-light: #718096;
+            
+            /* Тени */
+            --shadow-sm: 0 4px 6px rgba(255,51,51,0.1);
+            --shadow-md: 0 10px 15px rgba(255,51,51,0.15);
+            --shadow-lg: 0 20px 25px rgba(255,51,51,0.2);
+            --shadow-xl: 0 25px 50px rgba(255,51,51,0.25);
+            --shadow-primary: 0 8px 30px rgba(255, 51, 51, 0.4);
+            --shadow-secondary: 0 8px 30px rgba(0, 204, 68, 0.3);
+            --shadow-accent: 0 8px 30px rgba(255, 215, 0, 0.3);
+            
+            /* Градиенты */
+            --gradient-primary: linear-gradient(135deg, #FF3333 0%, #FF6600 100%);
+            --gradient-secondary: linear-gradient(135deg, #00CC44 0%, #00AA33 100%);
+            --gradient-danger: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
+            --gradient-success: linear-gradient(135deg, #00AA00 0%, #008800 100%);
+            --gradient-dark: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%);
+            --gradient-rainbow: linear-gradient(135deg, #FF3333 0%, #00CC44 50%, #FFD700 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text);
+            overflow-x: hidden;
+            background-color: var(--light);
+            line-height: 1.6;
+        }
+
+        /* Стили для кнопок */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            border: none;
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: var(--shadow-primary);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 40px rgba(255, 51, 51, 0.5);
+        }
+
+        /* Контейнер */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Верхняя панель с контактами */
+        .topbar {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 12px 0;
+            font-size: 14px;
+            position: relative;
+            z-index: 1001;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .topbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .topbar-contact {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .topbar-contact a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .topbar-contact a:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        .topbar-contact a i {
+            margin-right: 8px;
+            font-size: 16px;
+        }
+
+        .topbar-social {
+            display: flex;
+            gap: 15px;
+        }
+
+        .topbar-social a {
+            color: white;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .topbar-social a:hover {
+            transform: scale(1.2) translateY(-2px);
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Основная навигация */
+        .header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.4s ease;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(15px);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 65px;
+            margin-right: 12px;
+            transition: all 0.3s ease;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+        }
+
+        .logo-title {
+            font-size: 26px;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 0.5px;
+            line-height: 1.2;
+        }
+
+        .logo-subtitle {
+            font-size: 14px;
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        /* Навигация */
+        .nav {
+            display: flex;
+            gap: 12px;
+        }
+
+        .nav-link {
+            padding: 12px 18px;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+            letter-spacing: 0.3px;
+            border-radius: 25px;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+            background: var(--primary-light);
+            transform: translateY(-2px);
+        }
+
+        .nav-link.active {
+            color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        /* Стили для контента статьи */
+        .article-content-section {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+
+        .article-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .article-title-main {
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .article-meta {
+            font-size: 16px;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .article-image-main {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+            font-size: 18px;
+            line-height: 1.7;
+            color: var(--text);
+        }
+
+        .article-body h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--primary);
+            padding-left: 15px;
+        }
+
+        .article-body ul, .article-body ol {
+            margin-bottom: 25px;
+            padding-left: 40px;
+            font-size: 18px;
+            color: var(--text);
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+        
+        /* Стили для таблиц в статье */
+        .article-body table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            font-size: 16px;
+        }
+        .article-body th, .article-body td {
+            border: 1px solid var(--gray-dark);
+            padding: 15px;
+            text-align: left;
+        }
+        .article-body th {
+            background-color: var(--primary-light);
+            color: var(--primary-dark);
+            font-weight: 700;
+        }
+        .article-body tr:nth-child(even) {
+            background-color: var(--gray);
+        }
+        .article-body img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* Футер - минимальные стили для шаблона */
+        .footer {
+            background: var(--dark);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Topbar (скопировано из index.html) -->
+    <div class="topbar">
+        <div class="container topbar-container">
+            <div class="topbar-contact">
+                <a href="tel:+79136147446"><i class="fas fa-phone-alt"></i> +7 (913) 614-74-46</a>
+                <a href="mailto:info@sibdez-omsk.ru"><i class="fas fa-envelope"></i> info@sibdez-omsk.ru</a>
+            </div>
+            <div class="topbar-social">
+                <a href="https://vk.com/sibdez_omsk" target="_blank" title="ВКонтакте"><i class="fab fa-vk"></i></a>
+                <a href="https://t.me/sibdez_omsk" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                <a href="https://wa.me/79136147446" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header (скопировано из index.html) -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logosibdez2.png" alt="Логотип СибДез Омск">
+                <div class="logo-text">
+                    <span class="logo-title">СибДез</span>
+                    <span class="logo-subtitle">Служба дезинсекции</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="klopy.html" class="nav-link">Клопы</a>
+                <a href="tarakany.html" class="nav-link">Тараканы</a>
+                <a href="gryzuny.html" class="nav-link">Грызуны</a>
+                <a href="articles.html" class="nav-link active">Статьи</a>
+                <a href="#contacts" class="nav-link">Контакты</a>
+            </nav>
+            <a href="tel:+79136147446" class="btn btn-primary btn-sm">
+                <i class="fas fa-phone-alt btn-icon"></i> Вызвать СЭС
+            </a>
+        </div>
+    </header>
+
+    <!-- Секция Контента Статьи -->
+    <section class="article-content-section">
+        <div class="container">
+            <div class="article-header">
+                <h1 class="article-title-main">Что происходит, когда кусает клещ? Полное руководство по первой помощи и акарицидной обработке участка</h1>
+                <p class="article-meta">Опубликовано: 11.12.2025 | Категория: Клещи</p>
+            </div>
+            
+            <img src="images/kleshi_cover.jpg" alt="Красивый, ухоженный участок, обработанный от клещей" class="article-image-main">
+
+            <div class="article-body">
+                
+                <h2>Укус клеща: невидимая угроза, которую нельзя игнорировать</h2>
+                <p>Весна и лето — это время отдыха на природе, дачных работ и прогулок в парках. К сожалению, это также и сезон активности клещей, которые являются переносчиками крайне опасных заболеваний. Вопреки распространенному мнению, клещи не прыгают с деревьев, а поджидают свою жертву в траве и кустарниках, поднимаясь на высоту не более 1,5 метров.</p>
+
+                <h3>Что происходит в момент укуса?</h3>
+                <p>Клещ не просто "кусает" — он присасывается к коже. Его ротовой аппарат (гипостом) имеет специальные крючки, которые надежно фиксируют его в теле. В этот момент клещ вводит в ранку свою слюну, которая выполняет две ключевые функции:</p>
+                <ol>
+                    <li>**Обезболивание (анестезия):** Вы не почувствуете укуса, что позволяет клещу оставаться незамеченным часами или даже днями.</li>
+                    <li>**Передача инфекции:** Если клещ инфицирован, именно через слюну в кровь человека или животного попадают возбудители клещевого энцефалита, боррелиоза (болезни Лайма) и других опасных инфекций.</li>
+                </ol>
+
+                <h3>Главная опасность: клещевой энцефалит и боррелиоз</h3>
+                <ul>
+                    <li>**Клещевой энцефалит (КЭ):** Вирусное заболевание, поражающее центральную нервную систему. Может привести к параличу, инвалидности и даже смерти. Вакцинация — лучшая профилактика, но после укуса требуется экстренная профилактика.</li>
+                    <li>**Клещевой боррелиоз (Болезнь Лайма):** Бактериальное заболевание, которое при отсутствии лечения поражает суставы, сердце и нервную систему. Характерный симптом — мигрирующая эритема (красное кольцо вокруг места укуса), но она появляется не всегда.</li>
+                </ul>
+
+                <h2>Пошаговая инструкция: Что делать, если укусил клещ?</h2>
+                <p>Сохраняйте спокойствие. Правильные и быстрые действия могут минимизировать риск заражения.</p>
+
+                <h3>Шаг 1: Правильное удаление клеща</h3>
+                <p>Чем быстрее вы удалите клеща, тем меньше вероятность передачи инфекции.</p>
+                <img src="images/kleshi_first_aid.jpg" alt="Иллюстрация правильного удаления клеща пинцетом или ниткой" style="max-width: 500px; display: block; margin: 20px auto;">
+                <ol>
+                    <li>**Подготовьте инструменты:** Пинцет с тонкими концами, специальный клещеверт (ручка-лассо) или прочная нитка.</li>
+                    <li>**Захват:** Захватите клеща как можно ближе к хоботку (головке), у самой кожи. **Важно:** Не сдавливайте тело клеща, чтобы не выдавить его содержимое в ранку.</li>
+                    <li>**Удаление:** Медленно, без резких движений, выкручивайте клеща вокруг своей оси (лучше против часовой стрелки). Резко дергать нельзя!</li>
+                    <li>**Обработка ранки:** После удаления тщательно промойте место укуса водой с мылом и обработайте любым антисептиком (йод, спирт, хлоргексидин).</li>
+                </ol>
+
+                <p style="border-left: 5px solid var(--accent); padding: 15px; background-color: var(--gray); margin: 30px 0;">
+                    **Внимание!** Если вы не уверены в своих силах или клещ находится в труднодоступном месте, немедленно обратитесь в ближайший травмпункт или медицинское учреждение в Омске.
+                </p>
+
+                <h3>Шаг 2: Анализ клеща</h3>
+                <p>Удаленного клеща необходимо поместить в плотно закрытую емкость (например, небольшой флакон или баночку) с кусочком влажной ваты или травинки и как можно скорее доставить в лабораторию для анализа на наличие возбудителей КЭ и боррелиоза.</p>
+
+                <h3>Шаг 3: Наблюдение и профилактика</h3>
+                <p>Даже если клещ оказался "чистым", в течение месяца после укуса внимательно следите за своим самочувствием:</p>
+                <ul>
+                    <li>**Температура:** Повышение температуры тела.</li>
+                    <li>**Сыпь:** Появление красного кольца (эритемы) вокруг места укуса.</li>
+                    <li>**Симптомы гриппа:** Головная боль, ломота в теле, слабость.</li>
+                </ul>
+                <p>При появлении любых тревожных симптомов немедленно обратитесь к врачу-инфекционисту.</p>
+
+                <h2>Акарицидная обработка участка: надежная защита</h2>
+                <p>Лучший способ избежать укуса клеща — это профилактика. Если вы живете в частном доме или имеете дачный участок в Омске, **акарицидная обработка** является самым эффективным методом защиты.</p>
+
+                <h3>Что такое акарицидная обработка?</h3>
+                <p>Это профессиональная дезинсекционная процедура, направленная на уничтожение клещей на определенной территории.</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Характеристика</th>
+                            <th>Описание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>**Цель**</td>
+                            <td>Уничтожение иксодовых клещей, а также других вредных насекомых.</td>
+                        </tr>
+                        <tr>
+                            <td>**Средства**</td>
+                            <td>Используются специальные акарицидные препараты (инсектоакарициды), безопасные для людей и домашних животных после высыхания.</td>
+                        </tr>
+                        <tr>
+                            <td>**Метод**</td>
+                            <td>Обработка проводится с помощью профессиональных опрыскивателей (генераторов холодного или горячего тумана), которые обеспечивают равномерное покрытие травы, кустарников и нижних ветвей деревьев.</td>
+                        </tr>
+                        <tr>
+                            <td>**Сроки**</td>
+                            <td>Идеальное время — ранняя весна (март-апрель), как только сойдет снег и почва прогреется до +5°C, до начала активного сезона. Повторная обработка может потребоваться в середине лета.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <img src="images/kleshi_treatment.jpg" alt="Специалист проводит акарицидную обработку участка" style="max-width: 800px; display: block; margin: 20px auto;">
+
+                <h3>Почему стоит доверить обработку профессионалам "СибДез Омск"?</h3>
+                <p>Самостоятельная обработка участка может быть неэффективной и даже опасной. Профессиональная служба дезинсекции "СибДез Омск" гарантирует:</p>
+                <ol>
+                    <li>**Высокую эффективность:** Мы используем сертифицированные, мощные препараты, которые действуют до 2-3 месяцев.</li>
+                    <li>**Безопасность:** Наши специалисты строго соблюдают нормы СанПиН и используют средства, которые не наносят вреда растениям, людям и домашним животным после завершения работ и проветривания.</li>
+                    <li>**Комплексный подход:** Обрабатывается вся территория, включая периметр, заборы и места потенциального скопления клещей.</li>
+                    <li>**Опыт работы в Омске:** Мы знаем особенности местного климата и популяции клещей, что позволяет выбрать оптимальную стратегию обработки.</li>
+                </ol>
+
+                <p>Не рискуйте здоровьем своей семьи и домашних питомцев. Закажите профессиональную акарицидную обработку участка в "СибДез Омск" и наслаждайтесь безопасным отдыхом на свежем воздухе!</p>
+
+                <p style="text-align: center; margin-top: 50px;">
+                    <a href="tel:+79136147446" class="btn btn-primary btn-lg">
+                        <i class="fas fa-phone-alt btn-icon"></i> Заказать обработку от клещей в Омске
+                    </a>
+                </p>
+
+                <h2>Заключение</h2>
+                <p>Укус клеща — это серьезный повод для беспокойства, но своевременная первая помощь и последующее наблюдение могут предотвратить тяжелые последствия. Однако лучшая стратегия — это активная профилактика. **Акарицидная обработка участка** — это инвестиция в ваше спокойствие и здоровье.</p>
+                <p>Свяжитесь с нами сегодня, чтобы узнать о ценах и заказать обработку вашего участка от клещей в Омске.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер (минимальный для шаблона) -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 СибДез Омск. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Скрипты (минимальные для шаблона) -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
